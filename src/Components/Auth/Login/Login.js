@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, NavLink } from 'react-router-dom'
+import './Register.css'
 
 class Login extends Component {
 
@@ -21,12 +22,40 @@ class Login extends Component {
 
     render(){
         return(
-            <div>
-                <form onSubmit={this.doHandleSubmit}>
-                <input type='email' placeholder='email' name='email' value={this.state.email} onChange={this.doHandleInput}/>
-                <input type='password' placeholder='password' name='password' value={this.state.password} onChange={this.doHandleInput}/>
-                <button type='submit'> Login </button>
-                </form>
+            <div className='FormCenter'>
+                <div className='PageSwitcher'>
+                    <NavLink exact to="/login" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item PageSwitcher__Item--Active">Sign In</NavLink>
+                    <NavLink exact to="/register" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Sign Up</NavLink>
+                </div>
+                <div>
+                    <form className="FormFields" onSubmit={this.doHandleSubmit}>
+                        <div className='FormField'>
+                            <input
+                                placeholder='email'
+                                type='text'
+                                name='email'
+                                value={this.state.email}
+                                onChange={this.doHandleInput}
+                                className="FormField__Input"
+                                required
+                            />
+                        </div>
+                        <div className='FormField'>
+                            <input
+                                type='password'
+                                name='password'
+                                placeholder='password'
+                                value={this.state.password}
+                                onChange={this.doHandleInput}
+                                className="FormField__Input"
+                                required
+                            />
+                        </div>
+                        <div className='Formfield'>
+                            <button type='submit' className="FormField__Button">Login</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         )
     }

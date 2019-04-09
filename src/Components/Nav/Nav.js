@@ -12,7 +12,7 @@ class Nav extends Component {
                         <li id="list1" className="nav-list"><Link to='/dashboard'>Dashboard</Link></li>
                         <li id="list1" className="nav-list"><Link to='/login'>Login</Link></li>
                         <li id="list1" className="nav-list"><Link to='/register'>Register</Link></li>
-                        <li id="list1" className="nav-list" onClick={() => this.props.doLogOutUser()}>Logout</li>
+                        <li id="list1" className="nav-list" onClick={() => this.props.doLogOutUser()}><Link to='/'></Link>Logout</li>
                     </div>
                 </ul>
             </div>

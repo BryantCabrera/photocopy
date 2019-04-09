@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Login from './Components/Auth/Login/Login'
-import Register from './Components/Auth/Register/Register'
+import Register from './Components/Auth/Login/Register'
 import Nav from './Components/Nav/Nav'
 import Dashboard from './Components/Dashboard/Dashboard'
 import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
@@ -134,7 +134,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/register" component={() => <Register />} />
           <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
-          <Route exact path="/dashboard" component={() => <Dashboard loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
+          <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
           <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
         </Switch>
       </div>

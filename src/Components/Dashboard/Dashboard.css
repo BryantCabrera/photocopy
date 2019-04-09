@@ -17,10 +17,11 @@
 }
 
 .dashboard__userprofile--info {
-    background-color: rgb(133, 133, 133);
-    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
     width: 90%;
     text-align: center;
+    box-shadow: 0 1px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dashboard__userprofile--pictures {
@@ -44,7 +45,39 @@
 
 
 .dashboard__userprofile--searchbar {
-    height: 2rem;
     margin-bottom: 2rem;
-    width: 100%
+    width: 860px;
+    height: 3.5rem;
+    border-radius: 20px;
+    border: solid 4px rgba(155, 155, 155, 0.2);
+    padding-left: 1rem;
+}
+
+.dashboard__userprofile--name {
+    height: 41px;
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1881c3;
+    padding-bottom: 4rem;
+}
+
+.dashboard__userprofile--links {
+    /* width: 98px; */
+    height: 41px;
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding: 1.5rem;
 }

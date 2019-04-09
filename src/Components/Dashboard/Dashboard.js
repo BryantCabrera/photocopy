@@ -10,12 +10,15 @@ class Dashboard extends Component {
                 <div className="dashboard__userprofile--container">
                     <div className="dashboard__userprofile">
                         <div className="dashboard__userprofile--info">
-                            <PictureCard/>
                             <img className="dashboard__userprofile--img" src={`${this.props.loggedUser.img}`}></img>
-                            <div className="dashboard__userprofile--name">{this.props.loggedUser.name}</div>
-                            <div className="dashboard__userprofile--email">{this.props.loggedUser.email}</div>
+                            <div className="dashboard__userprofile--name">Hi, {this.props.loggedUser.name}!</div>
+                            <div className="dashboard__userprofile--links">Photos</div>
+                            <div className="dashboard__userprofile--links">Stats</div>
+                            <div className="dashboard__userprofile--links">Payment</div>
+                            <div className="dashboard__userprofile--links">Settings</div>
+                            {/* <div className="dashboard__userprofile--email">{this.props.loggedUser.email}</div>
                             <div className="dashboard__userprofile--address">Address: 5551 W. 6th. St.{this.props.loggedUser.address}</div>
-                            <div className="dashboard__userprofile--bankaccount">**** **** **** 5323{this.props.loggedUser.bankAccount}</div>
+                            <div className="dashboard__userprofile--bankaccount">**** **** **** 5323{this.props.loggedUser.bankAccount}</div> */}
                             <button onClick={this.props.doDeleteUser}>Delete</button>
                             <Link to='/edit-profile'><button>Edit Profile</button></Link>
                         </div>
