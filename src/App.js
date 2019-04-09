@@ -130,17 +130,17 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Nav doLogOutUser={this.doLogoutUser} />
-        <Switch>
-            <Route exact path="/" component={() => <Landing />} />
-          <Route exact path="/register" component={() => <Register />} />
-          <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
-          <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
-          <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
-          <Route exact path="/stats" component={() => <Stats />} />
-        </Switch>
-      </div>
+        <div>
+            <Nav doLogOutUser={this.doLogoutUser} loggedUser={this.state.loggedUser} />
+            <Switch>
+                <Route exact path="/" component={() => <Landing />} />
+                <Route exact path="/register" component={() => <Register />} />
+                <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
+                <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
+                <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
+                <Route exact path="/stats" component={() => <Stats />} />
+            </Switch>
+        </div>
     );
   }
 }

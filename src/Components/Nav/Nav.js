@@ -11,10 +11,21 @@ class Nav extends Component {
                 <span className="nav-container__company">Photoguard</span>
                 <ul className="nav-flex">
                     <div className="ternary-nav">
-                        <li className="nav-list"><Link to='/dashboard'>Dashboard</Link></li>
-                        <li className="nav-list"><Link to='/login'>Login</Link></li>
-                        <li className="nav-list"><Link to='/register'>Register</Link></li>
-                        <li className="nav-list" onClick={() => this.props.doLogOutUser()}><Link to='/'></Link>Logout</li>
+                        <li className="nav-list"><Link to='/'>Home</Link></li>
+                        <li className="nav-list"><Link to='/'>Marketplace</Link></li>
+                        <li className="nav-list"><Link to='/'>Verify</Link></li>
+
+                        {this.props.loggedUser._id ? 
+                            <li className="nav-list"><Link to='/dashboard'>Dashboard</Link></li>
+                            :
+                            <li className="nav-list"><Link to='/login'>Login</Link></li>
+                        }
+                        
+                        {this.props.loggedUser._id ? 
+                            <li className="nav-list" onClick={() => this.props.doLogOutUser()}><Link to='/'>Logout</Link></li>
+                            :
+                            <li className="nav-list"><Link to='/register'>Register</Link></li>
+                        }
                     </div>
                 </ul>
             </div>
