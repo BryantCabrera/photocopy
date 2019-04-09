@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>directionsign</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landingpage" transform="translate(-363.000000, -1323.000000)">
+            <g id="directionsign" transform="translate(365.000000, 1325.000000)">
+                <path d="M40,80 C62.09139,80 80,62.09139 80,40 C80,17.90861 62.09139,0 40,0 C17.90861,0 0,17.90861 0,40 C0,62.09139 17.90861,80 40,80 Z" id="Oval" stroke="#1881C3" stroke-width="4" fill="#FFFFFF" stroke-dasharray="5"></path>
+                <text id="ion-arrow-right-b---Ionicons" font-family="Ionicons" font-size="50" font-weight="400" fill="#1881C3">
+                    <tspan x="31" y="59"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
