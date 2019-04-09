@@ -134,7 +134,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/register" component={() => <Register />} />
           <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
-          <Route exact path="/dashboard" component={() => <Dashboard loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
+          <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
           <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
         </Switch>
       </div>
