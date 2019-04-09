@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, withRouter } from 'react-router-dom'
 import Login from './Components/Auth/Login/Login'
-import Register from './Components/Auth/Register/Register'
+import Register from './Components/Auth/Login/Register'
 import Nav from './Components/Nav/Nav'
 import Dashboard from './Components/Dashboard/Dashboard'
 import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
