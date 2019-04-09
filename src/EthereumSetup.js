@@ -8,6 +8,7 @@ let photoCopyAddress='0xE27eFB89fD4b3562efB93187C2422257a84E3569';
 web3.eth.defaultAccount = web3.eth.accounts[0]
 
 
-const photoCopyContract=web3.eth.contract(photoCopyABI).at(photoCopyAddress);
+// const photoCopyContract=web3.eth.contract(photoCopyABI).at(photoCopyAddress);
+const photoCopyContract= new web3.eth.Contract(photoCopyABI, photoCopyAddress);
 //exports the configuration so that we can make api calls from our app
 export {photoCopyContract};
