@@ -1,7 +1,7 @@
 .landing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50vh) 1fr;
     grid-template-areas: "about img"
                          "button img"
                          "userflow userflow";
@@ -16,8 +16,12 @@
     text-align: center;
 }
 
-.landing__button {
+.landing__button--link {
     grid-area: button;
+    align-self: flex-start;
+}
+
+.landing__button {
     justify-self: center;
     align-self: center;
     width: 10rem;

@@ -12,7 +12,7 @@ class Landing extends Component {
 
                     Each image you upload will create a blockchain hash code attached to your image data and copyright.  This provides a record of your creative talent while buyers can verify who owns the copyright.
                 </div>
-                <button className="landing__button">Sign Up</button>
+                <NavLink exact to="/register" className="landing__button--link"><button className="landing__button">Sign Up</button></NavLink>
                 <img className="landing__img" src="/home/image-post.svg" alt="Landing Image" title="Landing Image"></img>
 
                 <img className="landing__userflow" src="/home/userflow.png" alt="Userflow" title="Userflow"></img>
