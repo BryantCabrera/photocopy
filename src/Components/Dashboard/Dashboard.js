@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
+import PictureCard from '../PictureCard/PictureCard'
 
 class Dashboard extends Component {
     render() {
@@ -9,6 +10,7 @@ class Dashboard extends Component {
                 <div className="dashboard__userprofile--container">
                     <div className="dashboard__userprofile">
                         <div className="dashboard__userprofile--info">
+                            <PictureCard/>
                             <img className="dashboard__userprofile--img" src={`${this.props.loggedUser.img}`}></img>
                             <div className="dashboard__userprofile--name">{this.props.loggedUser.name}</div>
                             <div className="dashboard__userprofile--email">{this.props.loggedUser.email}</div>
