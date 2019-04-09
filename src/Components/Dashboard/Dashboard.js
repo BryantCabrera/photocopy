@@ -5,6 +5,9 @@ import PictureCard from '../PictureCard/PictureCard'
 import Stats from '../Stats/Stats'
 
 class Dashboard extends Component {
+    state = {
+        search: ''
+    }
     render() {
         return (
             <div className="dashboard__maincontainer">
@@ -27,7 +30,7 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="dashboard__userprofile">
-                        <input className="dashboard__userprofile--searchbar" value="Search"></input>
+                        <input className="dashboard__userprofile--searchbar" value={this.state.search}></input>
                         <div className="dashboard__userprofile--pictures">
                             <Link to='/stats'>
                             
