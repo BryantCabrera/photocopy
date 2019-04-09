@@ -1,0 +1,50 @@
+.dashboard__maincontainer {
+    margin: 15px;
+}
+
+.dashboard__userprofile--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dashboard__userprofile {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.dashboard__userprofile--info {
+    background-color: rgb(133, 133, 133);
+    height: 100vh;
+    width: 90%;
+    text-align: center;
+}
+
+.dashboard__userprofile--pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+}
+
+.dashboard__userprofile--pictures1 {
+    background: #000000f3;
+    max-width: 310px;
+    /* animation: animateGrid 0.5s */
+}
+
+.dashboard__userprofile--img {
+    max-width: 210px;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+
+.dashboard__userprofile--searchbar {
+    height: 2rem;
+    margin-bottom: 2rem;
+    width: 100%
+}
