@@ -1,0 +1,51 @@
+.Rectangle {
+    width: 60%;
+    height: 91px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 18%;
+}
+
+.March-1st-2019-120 {
+    height: 41px;
+    font-family: Avenir;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.Los-Angeles-CA {
+    width: 230px;
+    height: 41px;
+    font-family: Avenir;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.stats--users {
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.flags {
+    padding-left: 2rem;
+    padding-top: .6rem;
+}
