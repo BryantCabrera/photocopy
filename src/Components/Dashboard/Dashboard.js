@@ -1,15 +1,37 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import './Dashboard.css'
 
 class Dashboard extends Component {
     render() {
         return (
-            <div>
-                <h1>THIS IS THE DASHBOARD</h1>
-                <div>{this.props.loggedUser.name}</div>
-                <div>{this.props.loggedUser.email}</div>
-                <button onClick={this.props.doDeleteUser}>Delete</button>
-                <div>
+            <div className="dashboard__maincontainer">
+                <div className="dashboard__userprofile--container">
+                    <div className="dashboard__userprofile">
+                        <div className="dashboard__userprofile--info">
+                            <img className="dashboard__userprofile--img" src={`${this.props.loggedUser.img}`}></img>
+                            <div className="dashboard__userprofile--name">{this.props.loggedUser.name}</div>
+                            <div className="dashboard__userprofile--email">{this.props.loggedUser.email}</div>
+                            <div className="dashboard__userprofile--address">Address: 5551 W. 6th. St.{this.props.loggedUser.address}</div>
+                            <div className="dashboard__userprofile--bankaccount">**** **** **** 5323{this.props.loggedUser.bankAccount}</div>
+                            <button onClick={this.props.doDeleteUser}>Delete</button>
+                            <Link to='/edit-profile'><button>Edit Profile</button></Link>
+                        </div>
+                    </div>
 
+                    <div className="dashboard__userprofile">
+                    <input className="dashboard__userprofile--searchbar" value="Search"></input>
+                        <div className="dashboard__userprofile--pictures">
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" />
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551771825-1607dd0ad791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551728339-499b333c5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551854386-b42759a60dd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551833726-b6549cd73566?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                        <img className="dashboard__userprofile--pictures1" src="https://images.unsplash.com/photo-1551838030-f478473c9f0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                        
+                        </div>
+                    </div>
                 </div>
             </div>
         )

@@ -5,6 +5,7 @@ import Login from './Components/Auth/Login/Login'
 import Register from './Components/Auth/Register/Register'
 import Nav from './Components/Nav/Nav'
 import Dashboard from './Components/Dashboard/Dashboard'
+import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
 
 class App extends Component {
 
@@ -96,6 +97,36 @@ class App extends Component {
     }
   }
 
+  doEditUser = async (editUserInfo) => {
+    try {
+      console.log(editUserInfo, 'hitting edit user')
+      const editedUser = await fetch(`${process.env.REACT_APP_API_URL}/creators/${this.state.loggedUser._id}`, {
+        method: 'PUT',
+        credentials: 'include',
+        body: JSON.stringify(editUserInfo),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+
+      if (!editedUser.ok) {
+        throw Error(editedUser.statusText);
+      }
+
+      const parsedResponse = await editedUser.json();
+      this.setState({
+        loggedUser: parsedResponse.data
+      });
+      this.props.history.push(`/dashboard`);
+      console.log(parsedResponse, 'mom updated')
+
+    }
+    catch (err) {
+      console.log(err)
+    }
+
+  }
+
   render() {
     return (
       <div>
@@ -104,6 +135,7 @@ class App extends Component {
           <Route exact path="/register" component={() => <Register />} />
           <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
           <Route exact path="/dashboard" component={() => <Dashboard loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
+          <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
         </Switch>
       </div>
     );

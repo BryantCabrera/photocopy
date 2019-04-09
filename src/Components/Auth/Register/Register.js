@@ -5,7 +5,7 @@ class Register extends Component {
   state = {
     email: '',
     name: '',
-    password: ''
+    password: '',
   };
 
   handleChange = e => {
@@ -40,7 +40,7 @@ class Register extends Component {
         const parsedResponse = await loginResponse.json()
 
         if (parsedResponse.message === 'Registration successful.') {
-            this.props.history.push('/form')
+            this.props.history.push('/dashboard')
         }
 
     } catch (err) {
