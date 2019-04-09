@@ -120,9 +120,8 @@ class App extends Component {
       this.props.history.push(`/dashboard`);
       console.log(parsedResponse, 'mom updated')
 
-    }
-    catch (err) {
-      console.log(err)
+    } catch (err) {
+      console.log(err);
     }
 
   }
@@ -132,6 +131,7 @@ class App extends Component {
       <div>
         <Nav doLogOutUser={this.doLogoutUser} />
         <Switch>
+            <Route exact path="/" component={() => <Register />} />
           <Route exact path="/register" component={() => <Register />} />
           <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
           <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
