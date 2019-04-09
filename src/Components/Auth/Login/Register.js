@@ -60,7 +60,7 @@ class Register extends Component {
         <form onSubmit={this.handleSubmit} className='FormFields'>
 
           <div className='FormField'>
-            <label className='FormField__Label'>Enter your name</label>
+            <label className='FormField__Label'></label>
             <input
               type='text'
               placeholder='Enter your name'
@@ -72,7 +72,7 @@ class Register extends Component {
           </div>
 
           <div className='FormField'>
-            <label className='FormField__Label'>Enter your email</label>
+            <label className='FormField__Label'></label>
             <input
               type='email'
               placeholder='Enter your email'
@@ -84,7 +84,7 @@ class Register extends Component {
           </div>
 
           <div className='FormField'>
-            <label className='FormField__Label'>Enter your password</label>
+            <label className='FormField__Label'></label>
             <input
               type='password'
               placeholder='Enter your Password'
