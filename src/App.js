@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route, withRouter } from 'react-router-dom'
+import Landing from './Components/Landing/Landing';
 import Login from './Components/Auth/Login/Login'
 import Register from './Components/Auth/Login/Register'
 import Nav from './Components/Nav/Nav'
@@ -131,7 +132,7 @@ class App extends Component {
       <div>
         <Nav doLogOutUser={this.doLogoutUser} />
         <Switch>
-            <Route exact path="/" component={() => <Register />} />
+            <Route exact path="/" component={() => <Landing />} />
           <Route exact path="/register" component={() => <Register />} />
           <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
           <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />

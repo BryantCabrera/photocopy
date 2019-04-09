@@ -5,8 +5,12 @@ class Landing extends Component {
 
     render(){
         return(
-            <div className='FormCenter'>
-                
+            <div className='landing'>
+                <div className="landing__about">
+                    <button>Sign Up</button>
+                </div>
+                    <img src=""></img>
+
             </div>
         )
     }
