@@ -32,8 +32,6 @@ class EditUserInfo extends Component {
                     <h1>Edit Your Profile</h1>
                     <input name="name" type="text" defaultValue={this.state.name} onChange={this.doHandleInput} placeholder={this.props.loggedUser.name}/>
                     <input name="img" type="text" defaultValue={this.state.img} onChange={this.doHandleInput} placeholder={this.props.loggedUser.img}/>
-                    <input name="address" type="text" defaultValue={this.state.address} onChange={this.doHandleInput} placeholder={this.props.loggedUser.address}/>
-                    <input name="bankAccount" type="number" maxlength="16" defaultValue={this.state.bankAccount} onChange={this.doHandleInput} placeholder={this.props.loggedUser.bankAccount}/>
                     <button type="submit">Submit</button>
                 </form>
             </div>
