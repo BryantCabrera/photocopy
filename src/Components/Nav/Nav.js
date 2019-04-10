@@ -13,7 +13,7 @@ class Nav extends Component {
                     <div className="ternary-nav">
                         <li className="nav-list"><Link to='/'>Home</Link></li>
                         <li className="nav-list"><Link to='/'>Marketplace</Link></li>
-                        <li className="nav-list"><Link to='/'>Verify</Link></li>
+                        <li className="nav-list"><Link to='/verify'>Verify</Link></li>
 
                         {this.props.loggedUser._id ? 
                             <li className="nav-list"><Link to='/dashboard'>Dashboard</Link></li>
