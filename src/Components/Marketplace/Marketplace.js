@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 import './Marketplace.css'
 
 
@@ -8,7 +9,7 @@ class Marketplace extends Component {
             <div className="market__container">
                     <div className="market__pictures">
                         <img className="market__pictures-1" alt="" src="https://images.unsplash.com/photo-1551771825-1607dd0ad791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
-                        <img className="market__pictures-1" alt="" src="https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" />
+                        <NavLink exact to="/stats"><img className="market__pictures-1" alt="" src="https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" /></NavLink>
                         <img className="market__pictures-1" alt="" src="https://images.unsplash.com/photo-1551728339-499b333c5c43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
                         <img className="market__pictures-1" alt="" src="https://images.unsplash.com/photo-1551854386-b42759a60dd0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
 
