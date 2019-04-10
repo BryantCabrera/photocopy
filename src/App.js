@@ -7,7 +7,8 @@ import Register from './Components/Auth/Login/Register'
 import Nav from './Components/Nav/Nav'
 import Dashboard from './Components/Dashboard/Dashboard'
 import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
-import Stats from './Components/Stats/Stats'
+import Stats from './Components/Stats/Stats';
+import Verify from './Components/Verify/Verify';
 
 import Marketplace from './Components/Marketplace/Marketplace'
 
@@ -142,6 +143,7 @@ class App extends Component {
                 <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
                 <Route exact path="/stats" component={() => <Stats loggedUser={this.state.loggedUser}  doEditUser={this.doEditUser}/>} />
                 <Route exact path="/marketplace" component={() => <Marketplace />} />
+                <Route exact path="/verify" component={() => <Verify  />} />
             </Switch>
         </div>
     );

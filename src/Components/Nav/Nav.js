@@ -14,7 +14,7 @@ class Nav extends Component {
                     <div className="ternary-nav">
                         <li className="nav-list"><Link to='/'>Home</Link></li>
                         <li className="nav-list"><Link to='/marketplace'>Marketplace</Link></li>
-                        <li className="nav-list"><Link to='/'>Verify</Link></li>
+                        <li className="nav-list"><Link to='/verify'>Verify</Link></li>
 
                         {this.props.loggedUser._id ? 
                             <li className="nav-list"><Link to='/dashboard'>Dashboard</Link></li>
@@ -25,7 +25,7 @@ class Nav extends Component {
                         {this.props.loggedUser._id ? 
                             <li className="nav-list" onClick={() => this.props.doLogOutUser()}><Link to='/'>Logout</Link></li>
                             :
-                            <li className="nav-list"><Link to='/register'>Register</Link></li>
+                            <li className="nav-list register"><Link to='/register'><button className="nav-list__button">Sign Up</button></Link></li>
                         }
                     </div>
                 </ul>
@@ -34,4 +34,4 @@ class Nav extends Component {
     }
 }
 
-export default Nav
+export default Nav;
