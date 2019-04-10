@@ -24,7 +24,7 @@ class Nav extends Component {
                         {this.props.loggedUser._id ? 
                             <li className="nav-list" onClick={() => this.props.doLogOutUser()}><Link to='/'>Logout</Link></li>
                             :
-                            <li className="nav-list"><Link to='/register'>Register</Link></li>
+                            <li className="nav-list register"><Link to='/register'><button className="nav-list__button">Sign Up</button></Link></li>
                         }
                     </div>
                 </ul>
