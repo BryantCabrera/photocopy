@@ -3,9 +3,26 @@ import './Stats.css'
 
 
 class Stats extends Component {
+    state = {
+        receiptDisplay: 'none'
+    }
+
+    toggleReceipt = () => {
+        const receipt = this.state.receiptDisplay === 'block' ? 'none' : 'block';
+
+        this.setState({
+            receiptDisplay: receipt
+        });
+    }
+
     render() {
         return (
             <div className="stats">
+                <div className="receipt" style={{ display: `${this.state.receiptDisplay}` }}>
+                    <img onClick={this.toggleReceipt} className="receipt__img" src="https://cdn-images-1.medium.com/max/1600/1*65YyD4wdDRTFJOrJ3f9xxw.png" style={{ display: `${this.state.receiptDisplay}` }} alt="Receipt" title="Receipt">
+                    </img>
+                </div>
+
                 <div className="stats__photo">
                     <img className="stats__photo--img" src="https://images.unsplash.com/photo-1551843073-4a9a5b6fcd5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" alt="Ella" title="Ella">
                     </img>
@@ -20,7 +37,7 @@ class Stats extends Component {
                         { this.props.loggedUser._id && this.props.loggedUser.email !== 'a@a.com' ? 
                         <div className="stats__photo--info--buttons">
                             <button className="stats__photo--info--button1">Report</button>
-                            <button className="stats__photo--info--button2">Purchase</button>
+                            <button onClick={this.toggleReceipt} className="stats__photo--info--button2">Purchase</button>
                         </div>
                         :
                         ''

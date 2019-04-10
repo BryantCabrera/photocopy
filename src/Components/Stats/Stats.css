@@ -128,3 +128,27 @@
     padding-left: 2rem;
     padding-top: .6rem;
 }
+
+.receipt {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.receipt__img {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    height: 40rem;
+    width: auto;
+}
