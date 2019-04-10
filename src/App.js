@@ -143,6 +143,7 @@ class App extends Component {
                 <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
                 <Route exact path="/stats" component={() => <Stats loggedUser={this.state.loggedUser}  doEditUser={this.doEditUser}/>} />
                 <Route exact path="/marketplace" component={() => <Marketplace />} />
+                <Route exact path="/marketplace/:id" component={() => <Stats />} />
                 <Route exact path="/verify" component={() => <Verify  />} />
             </Switch>
         </div>

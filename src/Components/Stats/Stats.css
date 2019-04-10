@@ -1,3 +1,80 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats__photo {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 10rem;
+    grid-template-areas: "img info";
+    width: 80vw;
+    justify-self: center;
+}
+
+.stats__photo--img {
+    grid-area: img;
+    height: 100%;
+    justify-self: center;
+}
+
+.stats__photo--info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 2fr;
+    grid-template-areas: "title"
+                        "creator"
+                        "description"
+                        "stats"
+                        "buttons";
+    width: 100%;
+}
+
+.stats__photo--info--title {
+    grid-area: title;
+}
+
+.stats__photo--info--creator {
+    grid-area: creator;
+}
+
+.stats__photo--info--description {
+    grid-area: description;
+}
+
+.stats__photo--info--stats {
+    grid-area: stats;
+    justify-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats__photo--info--price {
+    margin-left: .5rem;
+}
+
+.stats__photo--info--buttons {
+    grid-area: buttons;
+    justify-self: flex-end;
+}
+
+.stats__photo--info--button1 {
+    height: 95%;
+    width: 10rem;
+    border: solid .2rem #1881c3;
+    border-radius: 3rem;
+}
+
+.stats__photo--info--button2 {
+    height: 95%;
+    width: 10rem;
+    background-image: linear-gradient(106deg, #1881c3, #33bde8);
+    border-radius: 3rem;
+    color: white;
+}
+
 .Rectangle {
     width: 60%;
     height: 91px;
@@ -40,10 +117,11 @@
     margin-top: 1rem;
 }
 
-.stats--users {
+.stats__users {
     font-size: 1.4rem;
     padding-left: 1rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
+    align-self: flex-start;
 }
 
 .flags {
