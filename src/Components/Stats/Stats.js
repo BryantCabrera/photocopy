@@ -31,7 +31,7 @@ class Stats extends Component {
                         <span className="stats__photo--info--creator">Taken by Bryant Cabrera on 4/10/2019</span>
                         <span className="stats__photo--info--description">Beauty personified.</span>
                         <div className="stats__photo--info--stats">
-                            <span className="stats__photo--info--users">9</span>
+                            <span className="stats__photo--info--users"><img className="people-icon" src="/images/peopleicon.png" alt="people-icon" title="people-icon"></img>&nbsp;9</span>
                             <span className="stats__photo--info--price">$15</span>
                         </div>
                         { this.props.loggedUser._id && this.props.loggedUser.email !== 'a@a.com' ? 

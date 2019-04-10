@@ -24,6 +24,8 @@
 
 .nav-container__logo {
     margin: 2rem 3rem;
+    height: 5rem;
+    width: auto;
 }
 
 .nav-container__company {
