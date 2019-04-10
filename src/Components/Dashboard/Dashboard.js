@@ -8,6 +8,13 @@ class Dashboard extends Component {
     state = {
         search: ''
     }
+
+    doHandleInput = (e) => {
+        this.setState({
+            [e.target.name]:  e.target.value
+        })
+    }
+
     render() {
         return (
             <div className="dashboard__maincontainer">
@@ -30,7 +37,7 @@ class Dashboard extends Component {
                     </div>
 
                     <div className="dashboard__userprofile">
-                        <input className="dashboard__userprofile--searchbar" value={this.state.search}></input>
+                        <input className="dashboard__userprofile--searchbar" onChange={this.doHandleInput} value={this.state.search} name="search" placeholder="Search"></input>
                         <div className="dashboard__userprofile--pictures">
                             <Link to='/stats'>
                             
