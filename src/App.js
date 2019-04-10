@@ -9,6 +9,8 @@ import Dashboard from './Components/Dashboard/Dashboard'
 import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
 import Stats from './Components/Stats/Stats'
 
+import Marketplace from './Components/Marketplace/Marketplace'
+
 class App extends Component {
 
   state = {
@@ -139,6 +141,7 @@ class App extends Component {
                 <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
                 <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
                 <Route exact path="/stats" component={() => <Stats loggedUser={this.state.loggedUser}  doEditUser={this.doEditUser}/>} />
+                <Route exact path="/marketplace" component={() => <Marketplace />} />
             </Switch>
         </div>
     );
