@@ -14,7 +14,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img src="./images/china.png"></img>
+                        <img alt="" src="./images/china.png"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         China
@@ -29,7 +29,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img src="./images/canada.png"></img>
+                        <img alt="" src="./images/canada.png"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         China
@@ -44,7 +44,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img src="./images/czech.png"></img>
+                        <img alt="" src="./images/czech.png"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         Czech

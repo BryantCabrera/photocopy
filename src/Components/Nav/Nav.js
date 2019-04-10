@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import "./Nav.css"
 
 
+
 class Nav extends Component {
     render(){
         return (
@@ -12,7 +13,7 @@ class Nav extends Component {
                 <ul className="nav-flex">
                     <div className="ternary-nav">
                         <li className="nav-list"><Link to='/'>Home</Link></li>
-                        <li className="nav-list"><Link to='/'>Marketplace</Link></li>
+                        <li className="nav-list"><Link to='/marketplace'>Marketplace</Link></li>
                         <li className="nav-list"><Link to='/verify'>Verify</Link></li>
 
                         {this.props.loggedUser._id ? 

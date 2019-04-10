@@ -10,6 +10,8 @@ import EditUserInfo from './Components/EditUserInfo/EditUserInfo'
 import Stats from './Components/Stats/Stats';
 import Verify from './Components/Verify/Verify';
 
+import Marketplace from './Components/Marketplace/Marketplace'
+
 class App extends Component {
 
   state = {
@@ -139,7 +141,8 @@ class App extends Component {
                 <Route exact path="/login" component={(...props) => <Login doLoginUser={this.doLoginUser} />} />
                 <Route exact path="/dashboard" component={() => <Dashboard doLogOutUser={this.doLogOutUser} loggedUser={this.state.loggedUser} doDeleteUser={this.doDeleteUser} />} />
                 <Route exact path="/edit-profile" component={() => <EditUserInfo loggedUser={this.state.loggedUser} doEditUser={this.doEditUser} />} />
-                <Route exact path="/stats" component={() => <Stats />} />
+                <Route exact path="/stats" component={() => <Stats loggedUser={this.state.loggedUser}  doEditUser={this.doEditUser}/>} />
+                <Route exact path="/marketplace" component={() => <Marketplace />} />
                 <Route exact path="/verify" component={() => <Verify  />} />
             </Switch>
         </div>
