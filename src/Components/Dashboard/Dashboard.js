@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
-import PictureCard from '../PictureCard/PictureCard'
-import Stats from '../Stats/Stats'
+// import PictureCard from '../PictureCard/PictureCard'
+// import Stats from '../Stats/Stats'
 
 class Dashboard extends Component {
     state = {

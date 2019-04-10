@@ -17,7 +17,7 @@ class Stats extends Component {
                             <span className="stats__photo--info--users">9</span>
                             <span className="stats__photo--info--price">$15</span>
                         </div>
-                        { this.props.loggedUser._id && this.props.loggedUser.email != 'a@a.com' ? 
+                        { this.props.loggedUser._id && this.props.loggedUser.email !== 'a@a.com' ? 
                         <div className="stats__photo--info--buttons">
                             <button className="stats__photo--info--button1">Report</button>
                             <button className="stats__photo--info--button2">Purchase</button>
@@ -35,7 +35,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img alt="" src="./images/china.png"></img>
+                        <img src="./images/china.png" alt="China flag" title="China flag"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         China
@@ -50,7 +50,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img alt="" src="./images/canada.png"></img>
+                        <img src="./images/canada.png" alt="Canada flag" title="Canada flag"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         China
@@ -65,7 +65,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img alt="" src="./images/czech.png"></img>
+                        <img src="./images/czech.png" alt="Czech flag" title="Czech flag"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         Czech
@@ -80,7 +80,7 @@ class Stats extends Component {
                         March-1st-2019-120
                     </div>
                     <div className="flags">
-                        <img src="./images/china.png"></img>
+                        <img src="./images/china.png" alt="China flag" title="China flag"></img>
                     </div>
                     <div className="Los-Angeles-CA">
                         China
@@ -94,4 +94,4 @@ class Stats extends Component {
     }
 }
 
-export default Stats
+export default Stats;

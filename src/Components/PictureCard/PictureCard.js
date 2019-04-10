@@ -17,22 +17,22 @@ class PictureCard extends Component {
 
                             <ul class="social-icons">
                                 <li>
-                                    <a href="">
+                                    <a href="www.facebook.com" title="facebook" target="_blank">
                                         <i className="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="www.instagram.com" title="instagram" target="_blank">
                                         <i className="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="www.twitter.com" title="twitter" target="_blank">
                                         <i className="fab fa-twitter"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="www.dribbble.com" title="dribbble" target="_blank">
                                         <i className="fab fa-dribbble"></i>
                                     </a>
                                 </li>

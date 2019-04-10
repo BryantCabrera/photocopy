@@ -87,7 +87,7 @@ class App extends Component {
             if (!deletedUser.ok) {
                 throw Error(deletedUser.statusText);
             }
-            const parsedDeletedResponse = await deletedUser.json();
+            // const parsedDeletedResponse = await deletedUser.json();
 
             this.setState({
                 loggedUser: {}
