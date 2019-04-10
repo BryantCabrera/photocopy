@@ -1,7 +1,11 @@
 # photocopy
 
 ## A. Description
-photocopy is a React app built by Bryant Cabrera, Kevin Cuison, Hann-Wei Chang, Tianyu Li, James Peera, and John Mavandi.
+photocopy is a React app that was built in 1.5 days by: 
+Bryant Cabrera - Lead Developer/Full Stack Software Engineer, 
+Kevin Cuison - Full Stack Software Engineer, 
+Hann-Wei Chang - UX Designer, 
+Tianyu Li - UX Designer
 
 ## B. User Stories
 
